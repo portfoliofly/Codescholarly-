@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" class="__meteor-css__" href="../assets/css/main.css">
+    <link type="text/css" rel="stylesheet" href="../assets/css/font-awesome.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="fragment" content="!">
+    <meta property="og:image" content="../assets/img/screenshot.png">
+    <meta property="og:title" content="Basics | Introduction to GraphQL">
+    <meta property="twitter:title" content="Basics | Introduction to GraphQL">
+    <title>Basics | Methods | Learn JQuery</title>
+  </head>
+<body>
+
+  <!-- if we're not showing a dropdown, we need some other place to show messages -->
+  <div id="__flow-root">
+  <div>
+    <nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a id="logo" class="navbar-brand" href="#">
+          Learn JQuery
+          <span>by <em onclick="location.href='#'">CodeScholarly</em></span>
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="main-navbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Packages</a></li>
+          <li><a href="#">Reviews</a></li>
+          <!-- <li><a href="/meetups">Meetups</a></li> -->
+          <li><a href="#">Leaderboard</a></li>
+              <li><a href="#" id="nav-github-login"><img src="../assets/img/sign_in_with_github.png"></a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  </div>
+  <div class="container">
+    <div class="row" id="learn-area">
+    <div class="col-sm-3 col-md-3 hidden-xs">
+    <div class="navigation">
+
+        <h4 class="media-heading course-title">Basics</h4>
+        <ol class="list-group">
+
+            <a href="introduction.html" class="list-group-item">
+			              1. Introduction to JQuery<br>
+
+			            </a>
+						<a href="Setup.html" class="list-group-item">
+						  2. Setup Environment<br>
+
+			            </a>
+			            <a href="lets-learn-jquery.html" class="list-group-item">
+			              3. Let’s Learn JQuery<br>
+
+			            </a>
+
+			            <a href="Selectors.html" class="list-group-item">
+			              4. Selectors<br>
+
+			            </a>
+
+			            <a href="Methods.html" class="list-group-item active">
+			              5. Methods<br>
+
+			            </a>
+
+			            <a href="Loops.html" class="list-group-item">
+			              6. Loops<br>
+
+			            </a>
+
+			            <a href="Chaining.html" class="list-group-item">
+			              7. Chaining<br>
+
+			            </a>
+
+			            <a href="Events.html" class="list-group-item">
+			              8. Events<br>
+
+			            </a>
+
+			            <a href="Effects.html" class="list-group-item">
+			              9. Effects<br>
+
+			            </a>
+
+			            <a href="Animation.html" class="list-group-item">
+			              10. Animation<br>
+
+			            </a>
+
+			            <a href="Traversing.html" class="list-group-item">
+			              11. Traversing the DOM<br>
+
+			            </a>
+
+			            <a href="JQueryForms.html" class="list-group-item">
+			              12. JQuery and Forms<br>
+
+			            </a>
+
+			        </ol>
+
+			    </div>
+			  </div>
+
+			  <div class="visible-xs-block">
+			    <div class="col-xs-12">
+			      <select id="navigation-mobile" onchange="location = this.value;">
+
+			          <optgroup label="Basics" data-courseid="basics">
+
+			              <option value="introduction.html">Introduction to JQuery</option>
+
+			              <option value="Setup.html">Setup Environment</option>
+
+			              <option value="lets-learn-jquery.html">Let’s Learn JQuery</option>
+
+			              <option value="Selectors.html">Selectors</option>
+
+			              <option value="Methods.html" selected = "selected">Methods</option>
+
+			              <option value="Loops.html">Loops</option>
+
+			              <option value="Chaining.html">Chaining</option>
+
+			              <option value="Events.html">Events</option>
+
+			              <option value="Effects.html">Effects</option>
+
+			              <option value="Animation.html">Animation</option>
+
+			              <option value="Traversing.html">Traversing the DOM</option>
+
+			              <option value="JQueryForms.html">JQuery and Forms</option>
+
+			          </optgroup>
+
+      </select>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+    <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+
+    <h2 class="lesson-name">Methods</h2>
+
+  <div class="btn-group">
+
+      <a href="introduction.html" type="button" class="btn btn-default step-goto active">
+
+          Introduction
+
+      </a>
+
+
+  </div>
+
+
+
+
+      <div id="lesson-content">
+    <p>Now that we can find what we want to work on in our page, we can actually use functions on them.
+   Some JQuery methods will get and set content on your web page, they only thing that has to be done differently in those
+   functions are adding in the new value that you would like</p>
+   <em>get:</em>
+<a href = "https://github.com/ddhaiti/JQuery-Examples-take1/blob/master/MethodsExample.js"><pre><code class="hljs objectivec">
+ $("p:first").text(); //returns the first p tag's content
+</code></pre></a>
+<em>set:</em>
+<a href = "https://github.com/ddhaiti/JQuery-Examples-take1/blob/master/MethodsExample.js"><pre><code class="hljs objectivec">
+ $("p:first").text("Hello World"); //changes first p element to Hello World
+</code></pre></a>
+
+<h2>Get/SetMethods</h2>
+<table class = "table-bordered">
+<tr>
+<th style="width:20%">Method</th>
+<th style="width:25%">Example</th>
+<th>Action</th>
+</tr>
+<tr>
+<td>text()</td>
+<td>$(&quot;li&quot;).text()</td>
+<td>gets the text of all li elements</td>
+</tr>
+<tr>
+<td>html()</td>
+<td>$(&quot;li&quot;).html()</td>
+<td>gets html of all li</td>
+</tr>
+<tr>
+<td>val()</td>
+<td>$(&quot;p&quot;)</td>
+<td>gets all value of p</td>
+</tr>
+</table>
+<br>
+<p>beyond the set and get methods, there are also methods to add and remove conetent from the page such as append(), before, addClass, remove() to name a few.
+There is more than likely a function that will aid you in exactly what you would like to do.</p>
+  </div>
+<h2>Extra Methods</h2>
+<table class = "table-bordered">
+<tr>
+<th style="width:20%">Method</th>
+<th style="width:25%">Example</th>
+<th>Action</th>
+</tr>
+<tr>
+<td>remove()</td>
+<td>$(&quot;p&quot;).remove()</td>
+<td>Remove all p elements</td>
+</tr>
+<tr>
+<td>append()</td>
+<td>$(&quot;p&quot;).append('three')</td>
+<td>adds the word three to all p elements</td>
+</tr>
+<tr>
+<td>prepend()</td>
+<td>$(&quot;p&quot;).prepend('three')</td>
+<td>adds three to beginnig of p</td>
+</tr>
+<tr>
+<td>before()</td>
+<td style="width:20%">$(&quot;p&quot;).before('&ltp>three&lt/p>')</td>
+<td>Adds three before p tag</td>
+</tr>
+<tr>
+<td>after()</td>
+<td>$(&quot;p&quot;).after('&ltp>three&lt/p>')</td>
+<td>Adds three after p tag &quot;demo&quot;</td>
+</tr></table>
+
+
+  <div class="controllers">
+
+
+      <button onclick="window.location.href='Loops.html'" id="lesson-next-btn" class="btn btn-controllers btn-primary">Next Lesson</button>
+
+
+  </div>
+
+
+
+
+
+
+      <a href="#" id="toggleComments" class="btn">
+
+      Show Comments
+
+  </a>
+    </div>
+  </div>
+  </div>
+  <div>
+    <div id="footer" class="container">
+    <!-- {{#if get "canShow"}} -->
+      <div id="footer-info">
+        This is a Tutorial for
+        <a href="https://twitter.com/codescholarly" target="_blank">CodeScholarly</a>.
+
+      </div>
+      <div id="footer-contact">
+        Contact
+        <a href="https://twitter.com/codescholarly" target="_blank">@CodeScholarly</a>
+
+        for any inquiries.
+      </div>
+    <!-- {{/if}} -->
+  </div>
+  </div>
+  </div>
+
+  </body>
+</html>

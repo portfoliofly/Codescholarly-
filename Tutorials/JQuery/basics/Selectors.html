@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" class="__meteor-css__" href="../assets/css/main.css">
+    <link type="text/css" rel="stylesheet" href="../assets/css/font-awesome.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="fragment" content="!">
+    <meta property="og:image" content="../assets/img/screenshot.png">
+    <meta property="og:title" content="Basics | Introduction to GraphQL">
+    <meta property="twitter:title" content="Basics | Introduction to GraphQL">
+    <title>Basics | Selectors | Learn JQuery</title>
+  </head>
+<body>
+
+  <!-- if we're not showing a dropdown, we need some other place to show messages -->
+  <div id="__flow-root">
+  <div>
+    <nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a id="logo" class="navbar-brand" href="#">
+          Learn JQuery
+          <span>by <em onclick="location.href='#'">CodeScholarly</em></span>
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="main-navbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Packages</a></li>
+          <li><a href="#">Reviews</a></li>
+          <!-- <li><a href="/meetups">Meetups</a></li> -->
+          <li><a href="#">Leaderboard</a></li>
+              <li><a href="#" id="nav-github-login"><img src="../assets/img/sign_in_with_github.png"></a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  </div>
+  <div class="container">
+    <div class="row" id="learn-area">
+    <div class="col-sm-3 col-md-3 hidden-xs">
+    <div class="navigation">
+
+        <h4 class="media-heading course-title">Basics</h4>
+        <ol class="list-group">
+
+ <a href="introduction.html" class="list-group-item">
+               1. Introduction to JQuery<br>
+
+             </a>
+ 			<a href="Setup.html" class="list-group-item">
+ 			  2. Setup Environment<br>
+
+             </a>
+             <a href="lets-learn-jquery.html" class="list-group-item">
+               3. Let’s Learn JQuery<br>
+
+             </a>
+
+             <a href="Selectors.html" class="list-group-item active">
+               4. Selectors<br>
+
+             </a>
+
+             <a href="Methods.html" class="list-group-item">
+               5. Methods<br>
+
+             </a>
+
+             <a href="Loops.html" class="list-group-item">
+               6. Loops<br>
+
+             </a>
+
+             <a href="Chaining.html" class="list-group-item">
+               7. Chaining<br>
+
+             </a>
+
+             <a href="Events.html" class="list-group-item">
+               8. Events<br>
+
+             </a>
+
+             <a href="Effects.html" class="list-group-item">
+               9. Effects<br>
+
+             </a>
+
+             <a href="Animation.html" class="list-group-item">
+               10. Animation<br>
+
+             </a>
+
+             <a href="Traversing.html" class="list-group-item">
+               11. Traversing the DOM<br>
+
+             </a>
+
+             <a href="JQueryForms.html" class="list-group-item">
+               12. JQuery and Forms<br>
+
+             </a>
+
+         </ol>
+
+     </div>
+   </div>
+
+   <div class="visible-xs-block">
+     <div class="col-xs-12">
+       <select id="navigation-mobile" onchange="location = this.value;">
+
+           <optgroup label="Basics" data-courseid="basics">
+
+               <option value="introduction.html">Introduction to JQuery</option>
+
+               <option value="Setup.html">Setup Environment</option>
+
+               <option value="lets-learn-jquery.html">Let’s Learn JQuery</option>
+
+               <option value="Selectors.html" selected = "selected">Selectors</option>
+
+               <option value="Methods.html">Methods</option>
+
+               <option value="Loops.html">Loops</option>
+
+               <option value="Chaining.html">Chaining</option>
+
+               <option value="Events.html">Events</option>
+
+               <option value="Effects.html">Effects</option>
+
+               <option value="Animation.html">Animation</option>
+
+               <option value="Traversing.html">Traversing the DOM</option>
+
+               <option value="JQueryForms.html">JQuery and Forms</option>
+
+           </optgroup>
+
+      </select>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+    <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+
+    <h2 class="lesson-name">Selectors</h2>
+
+  <div class="btn-group">
+
+      <a href="introduction.html" type="button" class="btn btn-default step-goto active">
+
+          Introduction
+
+      </a>
+
+
+  </div>
+
+
+
+
+      <div id="lesson-content">
+    <p>Before we can do anything in JQuery, we have to be able to find the element
+    we want to edit. JQuery uses css-style selectors, it also provides its own unique ones, such as :first. There are your basic selectors
+    such as by id or by element, then we can find thinngs by hierarchy, such as parent - child, and then we can filter our
+    selectors to be even more precise in our search.</p>
+<a href = "https://github.com/ddhaiti/JQuery-Examples-take1/blob/master/SelectorExample.js"><pre><code class="hljs objectivec">
+ $("p").text(); //finds and returns the text of all p tags
+</code></pre></a>
+<h2>Basic Selectors</h2>
+<table class = "table-bordered">
+<tr>
+<th style="width:20%">Selector</th>
+<th style="width:25%">Example</th>
+<th>Selects</th>
+</tr>
+<tr>
+<td>*</td>
+<td>$(&quot;*&quot;)</td>
+<td>All elements</td>
+</tr>
+<tr>
+<td>#<em>id</em></td>
+<td>$(&quot;#lastname&quot;)</td>
+<td>The element with id="lastname"</td>
+</tr>
+<tr>
+<td>.<em>class</em></td>
+<td>$(&quot;.intro&quot;)</td>
+<td>All elements with class=&quot;intro&quot;</td>
+</tr>
+<tr>
+<td>.<em>class,</em>.<em>class</em></td>
+<td>$(&quot;.intro,.demo&quot;)</td>
+<td>All elements with the class &quot;intro&quot; or &quot;demo&quot;</td>
+</tr>
+
+<tr>
+<td><em>element</em></td>
+<td>$(&quot;p&quot;)</td>
+<td>All &lt;p&gt; elements</td>
+</tr>
+<tr>
+<td><em>el1</em>,<em>el2</em>,<em>el3</em></td>
+<td>$(&quot;h1,div,p&quot;)</td>
+<td>All &lt;h1&gt;, &lt;div&gt; and &lt;p&gt; elements</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>:first</td>
+<td>$(&quot;p:first&quot;)</td>
+<td>The first &lt;p&gt; element</td>
+</tr>
+<tr>
+<td>:last</td>
+<td>$(&quot;p:last&quot;)</td>
+<td>The last &lt;p&gt; element</td>
+</tr>
+<tr>
+<td>:even</td>
+<td>$(&quot;tr:even&quot;)</td>
+<td>All even &lt;tr&gt; elements</td>
+</tr>
+<tr>
+<td>:odd</td>
+<td>$(&quot;tr:odd&quot;)</td>
+<td>All odd &lt;tr&gt; elements</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>:first-child</td>
+<td>$(&quot;p:first-child&quot;)</td>
+<td>All &lt;p&gt; elements that are the first child of their parent</td>
+</tr>
+<tr>
+<td>:first-of-type</td>
+<td>$(&quot;p:first-of-type&quot;)</td>
+<td>All &lt;p&gt; elements that are the first &lt;p&gt; element of their parent</td>
+</tr>
+<tr>
+<td>:last-child</td>
+<td>$(&quot;p:last-child&quot;)</td>
+<td>All &lt;p&gt; elements that are the last child of their parent</td>
+</tr>
+<tr>
+<td>:last-of-type</td>
+<td>$(&quot;p:last-of-type&quot;)</td>
+<td>All &lt;p&gt; elements that are the last &lt;p&gt; element of their parent</td>
+</tr>
+<tr>
+<td>:nth-child(<em>n</em>)</td>
+<td>$(&quot;p:nth-child(2)&quot;)</td>
+<td>All &lt;p&gt; elements that are the 2nd child of their parent</td>
+</tr>
+<tr>
+<td>:nth-last-child(<em>n</em>)</td>
+<td>$(&quot;p:nth-last-child(2)&quot;)</td>
+<td>All &lt;p&gt; elements that are the 2nd child of their parent, counting from the
+last child</td>
+</tr>
+<tr>
+<td>:nth-of-type(<em>n</em>)</td>
+<td>$(&quot;p:nth-of-type(2)&quot;)</td>
+<td>All &lt;p&gt; elements that are the 2nd &lt;p&gt; element of their parent</td>
+</tr>
+<tr>
+<td>:nth-last-of-type(<em>n</em>)</td>
+<td>$(&quot;p:nth-last-of-type(2)&quot;)</td>
+<td>All &lt;p&gt; elements that are the 2nd &lt;p&gt; element of their parent, counting from the
+last child</td>
+</tr>
+<tr>
+<td>:only-child</td>
+<td>$(&quot;p:only-child&quot;)</td>
+<td>All &lt;p&gt; elements that are the only child of their parent</td>
+</tr>
+<tr>
+<td>:only-of-type</td>
+<td>$(&quot;p:only-of-type&quot;)</td>
+<td>All &lt;p&gt; elements that are the only child, of its type, of their parent</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>parent &gt; child</td>
+<td>$(&quot;div &gt; p&quot;)</td>
+<td>All &lt;p&gt; elements that are a direct child of a &lt;div&gt; element</td>
+</tr>
+<tr>
+<td>parent descendant</td>
+<td>$(&quot;div p&quot;)</td>
+<td>All &lt;p&gt; elements that are descendants of a &lt;div&gt; element</td>
+</tr>
+<tr>
+<td>element + next</td>
+<td>$(&quot;div + p&quot;)</td>
+<td>The &lt;p&gt; element that are next to each &lt;div&gt; elements</td>
+</tr>
+<tr>
+<td>element ~ siblings</td>
+<td>$(&quot;div ~ p&quot;)</td>
+<td>All &lt;p&gt; elements that are siblings of a &lt;div&gt; element</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>:eq(<em>index</em>)</td>
+<td>$(&quot;ul li:eq(3)&quot;)</td>
+<td>The fourth element in a list (index starts at 0)</td>
+</tr>
+<tr>
+<td>:gt(<em>no</em>)</td>
+<td>$(&quot;ul li:gt(3)&quot;)</td>
+<td>List elements with an index greater than 3</td>
+</tr>
+<tr>
+<td>:lt(<em>no</em>)</td>
+<td>$(&quot;ul li:lt(3)&quot;)</td>
+<td>List elements with an index less than 3</td>
+</tr>
+<tr>
+<td>:not(<em>selector</em>)</td>
+<td>$(&quot;input:not(:empty)&quot;)</td>
+<td>All input elements that are not empty</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>:header</td>
+<td>$(&quot;:header&quot;)</td>
+<td>All header elements &lt;h1&gt;, &lt;h2&gt; ...</td>
+</tr>
+<tr>
+<td>:animated</td>
+<td>$(&quot;:animated&quot;)</td>
+<td>All animated elements</td>
+</tr>
+<tr>
+<td>:focus</td>
+<td>$(&quot;:focus&quot;)</td>
+<td>The element that currently has focus</td>
+</tr>
+<tr>
+<td>:contains(<em>text</em>)</td>
+<td>$(&quot;:contains('Hello')&quot;)</td>
+<td>All elements which contains the text &quot;Hello&quot;</td>
+</tr>
+<tr>
+<td>:has(<em>selector</em>)</td>
+<td>$(&quot;div:has(p)&quot;)</td>
+<td>All &lt;div&gt; elements that have a &lt;p&gt; element</td>
+</tr>
+<tr>
+<td>:empty</td>
+<td>$(&quot;:empty&quot;)</td>
+<td>All elements that are empty</td>
+</tr>
+<tr>
+<td>:parent</td>
+<td>$(&quot;:parent&quot;)</td>
+<td>All elements that are a parent of another element</td>
+</tr>
+<tr>
+<td>:hidden</td>
+<td>$(&quot;p:hidden&quot;)</td>
+<td>All hidden &lt;p&gt; elements</td>
+</tr>
+<tr>
+<td>:visible</td>
+<td>$(&quot;table:visible&quot;)</td>
+<td>All visible tables</td>
+</tr>
+<tr>
+<td>:root</td>
+<td>$(&quot;:root&quot;)</td>
+<td>The document's root element</td>
+</tr>
+<tr>
+<td>:lang(<em>language</em>)</td>
+<td>$(&quot;p:lang(de)&quot;)</td>
+<td>All &lt;p&gt; elements with a lang attribute value starting with &quot;de&quot;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>[<em>attribute</em>]</td>
+<td>$(&quot;[href]&quot;)</td>
+<td>All elements with a href attribute</td>
+</tr>
+<tr>
+<td>[<em>attribute</em>=<em>value</em>]</td>
+<td>$(&quot;[href='default.htm']&quot;)</td>
+<td>All elements with a href attribute value equal to &quot;default.htm&quot;</td>
+</tr>
+<tr>
+<td>[<em>attribute</em>!=<em>value</em>]</td>
+<td>$(&quot;[href!='default.htm']&quot;)</td>
+<td>All elements with a href attribute value not equal to &quot;default.htm&quot;</td>
+</tr>
+<tr>
+<td>[<em>attribute</em>$=<em>value</em>]</td>
+<td>$(&quot;[href$='.jpg']&quot;)</td>
+<td>All elements with a href attribute value ending with &quot;.jpg&quot;</td>
+</tr>
+<tr>
+<td>[<i>attribute</i>|=<i>value</i>]</td>
+<td>$(&quot;[title|='Tomorrow']&quot;)</td>
+<td>All elements with a title attribute value equal to 'Tomorrow', or starting
+with 'Tomorrow' followed by a hyphen</td>
+</tr>
+<tr>
+<td>[<i>attribute</i>^=<i>value</i>]</td>
+<td>$(&quot;[title^='Tom']&quot;)</td>
+<td>All elements with a title attribute value starting with &quot;Tom&quot;</td>
+</tr>
+<tr>
+<td>[<i>attribute</i>~=<i>value</i>]</td>
+<td>$(&quot;[title~='hello']&quot;)</td>
+<td>All elements with a title attribute value containing the specific word &quot;hello&quot;</td>
+</tr>
+<tr>
+<td>[<i>attribute*</i>=<i>value</i>]</td>
+<td>$(&quot;[title*='hello']&quot;)</td>
+<td>All elements with a title attribute value containing the word &quot;hello&quot;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>:input</td>
+<td>$(&quot;:input&quot;)</td>
+<td>All input elements</td>
+</tr>
+<tr>
+<td>:text</td>
+<td>$(&quot;:text&quot;)</td>
+<td>All input elements with type=&quot;text&quot;</td>
+</tr>
+<tr>
+<td>:password</td>
+<td>$(&quot;:password&quot;)</td>
+<td>All input elements with type=&quot;password&quot;</td>
+</tr>
+<tr>
+<td>:radio</td>
+<td>$(&quot;:radio&quot;)</td>
+<td>All input elements with type=&quot;radio&quot;</td>
+</tr>
+<tr>
+<td>:checkbox</td>
+<td>$(&quot;:checkbox&quot;)</td>
+<td>All input elements with type=&quot;checkbox&quot;</td>
+</tr>
+<tr>
+<td>:submit</td>
+<td>$(&quot;:submit&quot;)</td>
+<td>All input elements with type=&quot;submit&quot;</td>
+</tr>
+<tr>
+<td>:reset</td>
+<td>$(&quot;:reset&quot;)</td>
+<td>All input elements with type=&quot;reset&quot;</td>
+</tr>
+<tr>
+<td>:button</td>
+<td>$(&quot;:button&quot;)</td>
+<td>All input elements with type=&quot;button&quot;</td>
+</tr>
+<tr>
+<td>:image</td>
+<td>$(&quot;:image&quot;)</td>
+<td>All input elements with type=&quot;image&quot;</td>
+</tr>
+<tr>
+<td>:file</td>
+<td>$(&quot;:file&quot;)</td>
+<td>All input elements with type=&quot;file&quot;</td>
+</tr>
+<tr>
+<td>:enabled</td>
+<td>$(&quot;:enabled&quot;)</td>
+<td>All enabled input elements</td>
+</tr>
+<tr>
+<td>:disabled</td>
+<td>$(&quot;:disabled&quot;)</td>
+<td>All disabled input elements</td>
+</tr>
+<tr>
+<td>:selected</td>
+<td>$(&quot;:selected&quot;)</td>
+<td>All selected input elements</td>
+</tr>
+<tr>
+<td>:checked</td>
+<td>$(&quot;:checked&quot;)</td>
+<td>All checked input elements</td>
+</tr>
+</table>
+<p>    </p>
+<p>Once we have found the element(s) we would like to work on, we can begin applying functions to them.</p>
+
+  </div>
+
+
+
+  <div class="controllers">
+
+
+      <button onclick="window.location.href='Methods.html'" id="lesson-next-btn" class="btn btn-controllers btn-primary">Next Lesson</button>
+
+
+  </div>
+
+
+
+
+
+
+      <a href="#" id="toggleComments" class="btn">
+
+      Show Comments
+
+  </a>
+    </div>
+  </div>
+  </div>
+  <div>
+    <div id="footer" class="container">
+    <!-- {{#if get "canShow"}} -->
+      <div id="footer-info">
+        This is a Tutorial for
+        <a href="https://twitter.com/codescholarly" target="_blank">CodeScholarly</a>.
+
+      </div>
+      <div id="footer-contact">
+        Contact
+        <a href="https://twitter.com/codescholarly" target="_blank">@CodeScholarly</a>
+
+        for any inquiries.
+      </div>
+    <!-- {{/if}} -->
+  </div>
+  </div>
+  </div>
+
+  </body>
+</html>

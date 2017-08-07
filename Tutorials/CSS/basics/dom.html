@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" class="__meteor-css__" href="../assets/css/main.css">
+    <link type="text/css" rel="stylesheet" href="../assets/css/font-awesome.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="fragment" content="!">
+    <meta property="og:image" content="../assets/img/screenshot.png">
+    <meta property="og:title" content="Basics | Introduction to GraphQL">
+    <meta property="twitter:title" content="Basics | Introduction to GraphQL">
+    <title>Basics | Introduction to CSS | Learn CSS</title>
+  </head>
+<body>
+
+  <!-- if we're not showing a dropdown, we need some other place to show messages -->
+  <div id="__flow-root">
+  <div>
+    <nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a id="logo" class="navbar-brand" href="#">
+          Learn CSS
+          <span>by <em onclick="location.href='#'">CodeScholarly</em></span>
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="main-navbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Packages</a></li>
+          <li><a href="#">Reviews</a></li>
+          <!-- <li><a href="/meetups">Meetups</a></li> -->
+          <li><a href="#">Leaderboard</a></li>
+              <li><a href="#" id="nav-github-login"><img src="../assets/img/sign_in_with_github.png"></a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  </div>
+  <div class="container">
+    <div class="row" id="learn-area">
+    <div class="col-sm-3 col-md-3 hidden-xs">
+    <div class="navigation">
+
+        <h4 class="media-heading course-title">Basics</h4>
+        <ol class="list-group">
+
+            <a href="introduction.html" class="list-group-item">
+			              1. Introduction to CSS<br>
+
+			            </a>
+						<a href="setup.html" class="list-group-item">
+						  2. Setup Environment<br>
+
+			            </a>
+			            <a href="learn.html" class="list-group-item">
+			              3. Let’s Learn CSS<br>
+
+			            </a>
+
+			            <a href="dom.html" class="list-group-item active">
+			              4. DOM<br>
+
+			            </a>
+
+			            <a href="selectors.html" class="list-group-item">
+			              5. Selectors<br>
+
+			            </a>
+
+			            <a href="attributes.html" class="list-group-item">
+			              6. Attibutes/Properties<br>
+
+			            </a>
+
+			            <a href="color.html" class="list-group-item">
+			              7. Color<br>
+
+			            </a>
+
+			            <a href="background.html" class="list-group-item">
+			              8. Background<br>
+
+			            </a>
+
+			            <a href="border.html" class="list-group-item">
+			              9. Border<br>
+
+			            </a>
+
+			            <a href="position.html" class="list-group-item">
+			              10. Positioning<br>
+
+			            </a>
+
+
+			        </ol>
+
+			    </div>
+			  </div>
+
+			  <div class="visible-xs-block">
+			    <div class="col-xs-12">
+			      <select id="navigation-mobile" onchange="location = this.value;">
+
+			          <optgroup label="Basics" data-courseid="basics">
+
+			              <option value="introduction.html">Introduction to CSS</option>
+
+			              <option value="setup.html">Setup Environment</option>
+
+			              <option value="learn.html">Let’s Learn CSS</option>
+
+			              <option value="dom.html" selected = "selected">DOM</option>
+
+			              <option value="selectors.html">Selectors</option>
+
+			              <option value="attributes.html">Attributes/Properties</option>
+
+			              <option value="color.html">Color</option>
+
+			              <option value="backgroumd.html">Background</option>
+
+			              <option value="border.html">Border</option>
+
+			              <option value="position.html">Positioning</option>
+
+
+			          </optgroup>
+
+      </select>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+    <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+
+    <h2 class="lesson-name">DOM</h2>
+
+  <div class="btn-group">
+
+      <a href="introduction.html" type="button" class="btn btn-default step-goto active">
+
+          Introduction
+
+      </a>
+
+
+  </div>
+
+
+
+
+      <div id="lesson-content">
+    <p>When dealing with a webpage, we must understand the DOM(document object model). Siimpy put the dom
+    allocates every element of your html file a certain amount of space and encapsulates it in a box. </p>
+<img src="../assets/img/model.jpg" alt = "image of box model">
+<br>
+<p>Once this is understood, then we can edit these as we see fit. We should also know how the DOM is set up:</p>
+<img src="../assets/img/dom1.jpg" alt = "image of DOM">
+<br>
+<p>with this we are ready to go into our file and style our page.</p>
+
+
+  </div>
+
+
+
+  <div class="controllers">
+
+
+      <button onclick="window.location.href='selectors.html'" id="lesson-next-btn" class="btn btn-controllers btn-primary">Next Lesson</button>
+
+
+  </div>
+
+
+
+
+
+
+      <a href="#" id="toggleComments" class="btn">
+
+      Show Comments
+
+  </a>
+    </div>
+  </div>
+  </div>
+  <div>
+    <div id="footer" class="container">
+    <!-- {{#if get "canShow"}} -->
+      <div id="footer-info">
+        This is a Tutorial for
+        <a href="https://twitter.com/codescholarly" target="_blank">CodeScholarly</a>.
+
+      </div>
+      <div id="footer-contact">
+        Contact
+        <a href="https://twitter.com/codescholarly" target="_blank">@CodeScholarly</a>
+
+        for any inquiries.
+      </div>
+    <!-- {{/if}} -->
+  </div>
+  </div>
+  </div>
+
+  </body>
+</html>

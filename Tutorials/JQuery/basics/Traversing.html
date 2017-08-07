@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" class="__meteor-css__" href="../assets/css/main.css">
+    <link type="text/css" rel="stylesheet" href="../assets/css/font-awesome.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="fragment" content="!">
+    <meta property="og:image" content="../assets/img/screenshot.png">
+    <meta property="og:title" content="Basics | Introduction to GraphQL">
+    <meta property="twitter:title" content="Basics | Introduction to GraphQL">
+    <title>Basics | Traversing the DOM | Learn JQuery</title>
+  </head>
+<body>
+
+  <!-- if we're not showing a dropdown, we need some other place to show messages -->
+  <div id="__flow-root">
+  <div>
+    <nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a id="logo" class="navbar-brand" href="#">
+          Learn JQuery
+          <span>by <em onclick="location.href='#'">CodeScholarly</em></span>
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="main-navbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Packages</a></li>
+          <li><a href="#">Reviews</a></li>
+          <!-- <li><a href="/meetups">Meetups</a></li> -->
+          <li><a href="#">Leaderboard</a></li>
+              <li><a href="#" id="nav-github-login"><img src="../assets/img/sign_in_with_github.png"></a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  </div>
+  <div class="container">
+    <div class="row" id="learn-area">
+    <div class="col-sm-3 col-md-3 hidden-xs">
+    <div class="navigation">
+
+        <h4 class="media-heading course-title">Basics</h4>
+        <ol class="list-group">
+
+         <a href="introduction.html" class="list-group-item">
+		               1. Introduction to JQuery<br>
+
+		             </a>
+		 			<a href="Setup.html" class="list-group-item">
+		 			  2. Setup Environment<br>
+
+		             </a>
+		             <a href="lets-learn-jquery.html" class="list-group-item">
+		               3. Let’s Learn JQuery<br>
+
+		             </a>
+
+		             <a href="Selectors.html" class="list-group-item">
+		               4. Selectors<br>
+
+		             </a>
+
+		             <a href="Methods.html" class="list-group-item">
+		               5. Methods<br>
+
+		             </a>
+
+		             <a href="Loops.html" class="list-group-item">
+		               6. Loops<br>
+
+		             </a>
+
+		             <a href="Chaining.html" class="list-group-item">
+		               7. Chaining<br>
+
+		             </a>
+
+		             <a href="Events.html" class="list-group-item">
+		               8. Events<br>
+
+		             </a>
+
+		             <a href="Effects.html" class="list-group-item">
+		               9. Effects<br>
+
+		             </a>
+
+		             <a href="Animation.html" class="list-group-item">
+		               10. Animation<br>
+
+		             </a>
+
+		             <a href="Traversing.html" class="list-group-item active">
+		               11. Traversing the DOM<br>
+
+		             </a>
+
+		             <a href="JQueryForms.html" class="list-group-item">
+		               12. JQuery and Forms<br>
+
+		             </a>
+
+		         </ol>
+
+		     </div>
+		   </div>
+
+		   <div class="visible-xs-block">
+		     <div class="col-xs-12">
+		       <select id="navigation-mobile" onchange="location = this.value;">
+
+		           <optgroup label="Basics" data-courseid="basics">
+
+		               <option value="introduction.html">Introduction to JQuery</option>
+
+		               <option value="Setup.html">Setup Environment</option>
+
+		               <option value="lets-learn-jquery.html">Let’s Learn JQuery</option>
+
+		               <option value="Selectors.html">Selectors</option>
+
+		               <option value="Methods.html">Methods</option>
+
+		               <option value="Loops.html">Loops</option>
+
+		               <option value="Chaining.html">Chaining</option>
+
+		               <option value="Events.html">Events</option>
+
+		               <option value="Effects.html">Effects</option>
+
+		               <option value="Animation.html">Animation</option>
+
+		               <option value="Traversing.html" selected = "selected">Traversing the DOM</option>
+
+		               <option value="JQueryForms.html">JQuery and Forms</option>
+
+		           </optgroup>
+
+      </select>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+    <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+
+    <h2 class="lesson-name">Traversing the DOM</h2>
+
+  <div class="btn-group">
+
+      <a href="introduction.html" type="button" class="btn btn-default step-goto active">
+
+          Introduction
+
+      </a>
+
+
+  </div>
+
+
+
+
+      <div id="lesson-content">
+    <p>Once You have made a selection with JQuery, then you can use given methods to access, differnt parts of the DOM based on your selection</p>
+<a href = "https://github.com/ddhaiti/JQuery-Examples-take1/blob/master/TraversingExample.js"><pre><code class="hljs objectivec">
+ $('h2').find('a'); /*finds all a that are children of h2 */
+</code></pre></a>
+<p><img src="../assets/img/pic_htmltree.png" alt="DOM Overview"></p>
+  <a href = "https://github.com/ddhaiti/JQuery-Examples-take1/blob/master/traverse1.js"><pre><code class="hljs objectivec">
+   $(document).ready(function(){
+       $("a").parents("ul");
+	});
+</code></pre></a>
+  <a href = "https://github.com/ddhaiti/JQuery-Examples-take1/blob/master/traverse2.js"><pre><code class="hljs objectivec">
+   $(document).ready(function(){
+       $("ul").children();
+	})
+</code></pre></a>
+  <a href = "https://github.com/ddhaiti/JQuery-Examples-take1/blob/master/traverse3.js"><pre><code class="hljs objectivec">
+ $(document).ready(function(){
+     $("h1").siblings();
+	});
+</code></pre></a>
+  <a href = "https://github.com/ddhaiti/JQuery-Examples-take1/blob/master/traverse4.js"><pre><code class="hljs objectivec">
+  $(document).ready(function(){
+      $("p").first();
+	});
+</code></pre></a>
+  </div>
+
+
+<br>
+
+<h2>Methods</h2>
+<table class="table-bordered">
+<tr>
+<th style="width:20%">Method</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>add()</td>
+<td>Adds elements to the set of matched elements</td>
+</tr>
+<tr>
+<td>addBack()</td>
+<td>Adds the previous set of elements to the current set</td>
+</tr>
+<tr>
+<td>children()</td>
+<td>Returns all direct children of the selected element</td>
+</tr>
+<tr>
+<td>closest()</td>
+<td>Returns the first ancestor of the selected element</td>
+</tr>
+<tr>
+<td>contents()</td>
+<td>Returns all direct children of the selected element (including
+text and comment nodes)</td>
+</tr>
+<tr>
+<td>each()</td>
+<td>Executes a function for each matched element</td>
+</tr>
+  <tr>
+<td>end()</td>
+<td>Ends the most recent filtering operation in the current chain, and return the
+set of matched elements to its previous state</td>
+  </tr>
+  <tr>
+<td>eq()</td>
+<td>Returns an element with a specific index number of the selected elements</td>
+  </tr>
+  <tr>
+<td>filter()</td>
+<td>Reduce the set of matched elements to those that match the selector or pass
+the function's test</td>
+  </tr>
+  <tr>
+<td>find()</td>
+<td>Returns descendant elements of the selected element</td>
+  </tr>
+  <tr>
+<td>first()</td>
+<td>Returns the first element of the selected elements</td>
+  </tr>
+  <tr>
+<td>has()</td>
+<td>Returns all elements that have one or more elements inside of them</td>
+  </tr>
+  <tr>
+<td>is()</td>
+<td>Checks the set of matched elements against a selector/element/jQuery object,
+and return true if at least one of these elements matches the given arguments</td>
+  </tr>
+  <tr>
+<td>last()</td>
+<td>Returns the last element of the selected elements</td>
+  </tr>
+  <tr>
+<td>map()</td>
+<td>Passes each element in the matched set through a function, producing a new jQuery object containing the return values</td>
+  </tr>
+  <tr>
+<td>next()</td>
+<td>Returns the next sibling element of the selected element</td>
+  </tr>
+  <tr>
+<td>nextAll()</td>
+<td>Returns all next sibling elements of the selected element</td>
+  </tr>
+  <tr>
+<td>nextUntil()</td>
+<td>Returns all next sibling elements between two given arguments</td>
+  </tr>
+  <tr>
+<td>not()</td>
+<td>Remove elements from the set of matched elements</td>
+  </tr>
+  <tr>
+<td>offsetParent()</td>
+<td>Returns the first positioned parent element</td>
+  </tr>
+  <tr>
+<td>parent()</td>
+<td>Returns the direct parent element of the selected element</td>
+  </tr>
+  <tr>
+<td>parents()</td>
+<td>Returns all ancestor elements of the selected element</td>
+  </tr>
+  <tr>
+<td>parentsUntil()</td>
+<td>Returns all ancestor elements between two given arguments</td>
+  </tr>
+  <tr>
+<td>prev()</td>
+<td>Returns the previous sibling element of the selected element</td>
+  </tr>
+  <tr>
+<td>prevAll()</td>
+<td>Returns all previous sibling elements of the selected element</td>
+  </tr>
+  <tr>
+<td>prevUntil()</td>
+<td>Returns all previous sibling elements between two given arguments</td>
+  </tr>
+  <tr>
+<td>siblings()</td>
+<td>Returns all sibling elements of the selected element</td>
+  </tr>
+  <tr>
+<td>slice()</td>
+<td>Reduces the set of matched elements to a subset specified by a range of
+indices</td>
+  </tr>
+</table>
+
+
+  <div class="controllers">
+
+
+      <button onclick="window.location.href='JQueryForms.html'" id="lesson-next-btn" class="btn btn-controllers btn-primary">Next Lesson</button>
+
+
+  </div>
+
+
+
+
+
+
+      <a href="#" id="toggleComments" class="btn">
+
+      Show Comments
+
+  </a>
+    </div>
+  </div>
+  </div>
+  <div>
+    <div id="footer" class="container">
+    <!-- {{#if get "canShow"}} -->
+      <div id="footer-info">
+        This is a Tutorial for
+        <a href="https://twitter.com/codescholarly" target="_blank">CodeScholarly</a>.
+
+      </div>
+      <div id="footer-contact">
+        Contact
+        <a href="https://twitter.com/codescholarly" target="_blank">@CodeScholarly</a>
+
+        for any inquiries.
+      </div>
+    <!-- {{/if}} -->
+  </div>
+  </div>
+  </div>
+
+  </body>
+</html>
